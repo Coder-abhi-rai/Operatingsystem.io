@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="tutcss.css">
+</head>
+<body>
+      <h2>Process Synchronization</h2>
+      <p>
+  Process synchronization is defined as a mechanism which ensures that two or more concurrent processes do not simultaneously execute some particular program segment known as critical section. When one process starts executing the critical section (serialized segment of the program) the other thread should wait until the first thread finishes. <br>read more... <a href="https://youtu.be/4BInccFSKso"> click here </a></p>
+
+  <h3> Race Condition</h3>
+  <p>
+  	A situation where, several processes access and manipulate the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place, is called a race condition. <br> read more... <a href="https://youtu.be/4BInccFSKso"></a>
+  </p>
+
+ <h3> Critical Section</h3>
+ <p>
+   Each process has a segment of code, called a critical section, in which the process may be changing common variables, updating a table, writing a file, etc. <br>read more... <a href="https://youtu.be/4BInccFSKso"> click here </a>	
+ </p>
+
+ <h3>Semaphores</h3>
+ <p>
+ 	 A semaphore is an shared variable/integer variable to synchronize the progress of interacting processes. It is basically a synchronizing tool and is accessed only through two standard atomic operations, wait and signal designated by P() and V() respectively.Here atomic operations means executing operation without interruption. <br>read more...<a href="https://youtu.be/VcVbUbPNIfw"> click here </a>
+ </p>
+
+ <h3>Classical Problem of Synchronization</h3>
+ <p>
+
+<h4>The Bounded Buffer Problem:</h4>
+
+ This is a generalization of the producer consumer problem where in access is controlled to a shared group of buffers of a limited size. 
+ The two counting semaphores "full" and "empty" keep track of the current number of full and empty buffers respectively ( and initialized to 0 and N respectively. ) 
+ The binary semaphore mutex controls access to the critical section. The producer and consumer processes are nearly identical
+ One can think of the producer as producing full buffers, and the consumer producing empty buffers.<br>
+
+<h4>The Readers Writers Problem:</h4>
+
+ In the readers writers problem there are some processes ( termed readers ) who only read the shared data, and never change it, and there are other processes ( termed writers ) who may change the data in addition to or instead of reading it. There is no limit to how many readers can access the data simultaneously, but when a writer accesses the data, it needs exclusive.
+</p>
+
+<h4>Dining Philosophers Problem</h4> 
+<p>
+	The dining philosophers problem is a classic example in computer science often used to illustrate synchronization issues and solutions in concurrent algorithm design. It illustrates the challenges of avoiding a system state where progress is not possible, a deadlock. <br>read more...<a href="https://youtu.be/WX95OfXVtZQ"> click here </a>
+</p>
+
+<div>
+     <section>
+	          <p id="pi"><a href="tut4.html"><img src="prev.png"></a></p>
+         <p>previous</p>
+	    </section>
+
+    <section>
+	     <p><a href="tut6.html"><img src="next.png"></a></p>
+         <p>next</p> 
+	    </section></div>
+</body>
+</html>

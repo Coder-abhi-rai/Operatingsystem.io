@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study Materials</title>
+	<link rel="stylesheet" type="text/css" href="tutcss.css">
+</head>
+<body>
+      <h2>Deadlock:</h2>
+      <p>
+      	Two processes are involved in deadlock if and only if they are waiting for an event which would never happen.<br> 
+A process requests resources; if the resources are not available at that time, the process enters a wait state. Waiting processes may never again change state, because the resources they have requested are held by other waiting processes. This situation is called a deadlock. <br>read more... <a href="https://youtu.be/XpKrBUZqfGI"> click here</a>
+      </p>
+
+      <h3>Deadlock Characterization:</h3>
+      <p>
+      	
+
+ A deadlock situation can arise if the following four conditions hold simultaneously in a system:<br> 
+<h4>1. Mutual exclusion:</h4> At least one resource must be held in a non sharable mode; that is, only one process at a time can use the resource. If another process requests that resource, the requesting process must be delayed until the resource has been released.<br> 
+<h4>2. Hold and wait:</h4> A process must be holding at least one resource and waiting to acquire additional resources that are currently being held by other processes. <br> 
+<h4>3. No preemption:</h4> Resources cannot be preempted; that is, a resource can be released only voluntarily by the process holding it, after that process has completed its task. <br> 
+<h4>4. Circular wait:</h4> A set {Po, P1, ..., P,) of waiting processes must exist such that Po is waiting for a resource that is held by P1, P1 is waiting for a resource that is held by P2, ..., Pn.-1, Pl is waiting for a resource that is held by P,, and Pn, is waiting for a resource that is held by Po. <br>
+      </p>
+
+      <h3>Methods For Handling Deadlock</h3>
+      <p>
+      
+
+One of three ways to deal with the deadlock: <br> 
+<ul>
+ <li>We can use a protocol to prevent or avoid deadlocks, ensuring that the system will never enter a deadlock state.</li><br> 
+<li>We can allow the system to enter a deadlock state, detect it, and recover.</li> <br>
+<li> We can ignore the problem altogether, and pretend that deadlocks never occur in the system. This solution is used by most operating systems, including UNIX.</li>
+      </p>
+
+      <h3>Deadlock Prevention</h3>
+      <p>
+      	To ensure that deadlocks never occur, the system can use either a deadlock prevention. Deadlock prevention is a set of methods for ensuring that at least one of the necessary conditions cannot hold. <br> read more... <a href="https://youtu.be/vKwR_p5igII"> click here </a>
+      </p>
+
+      <h3>Deadlock Avoidance</h3>
+      <p>
+      	Deadlock avoidance requires that the operating system be given in advance additional information concerning which resources a process will request and use during its lifetime. With this additional knowledge, we can decide for each request whether or not the process should wait. To decide whether the current request can be satisfied or must be delayed, the system must consider the resources currently available, the resources currently allocated to each process, and the future requests and releases of each process.<br> read more... <a href="https://youtu.be/hCE2b9sRXWQ"> click here </a>
+      </p>
+
+       <h4> Banker's Algorithm</h4>
+       <p>
+       	It is similar to a banking system, that is to ensure that the bank never allocates its available cash such that it can no longer satisfy the needs of all its customers.<br> read more...<a href="https://youtu.be/uOT96Sw2CaY"></a>
+       </p>
+
+      <h3>Deadlock Detection</h3>
+     <p>
+      	If deadlocks are not avoided, then another approach is to detect when they have occurred and recover somehow. 
+ In addition to the performance hit of constantly checking for deadlocks, a policy / algorithm must be in place for recovering from deadlocks, and there is potential for lost work when processes must be aborted or have their resources preempted.<br> read more... <a href="https://youtu.be/GyCP3XIXjXs"> click here </a>
+      </p>
+
+      <h3>Deadlock Recovery</h3>
+      <p>
+      There are two methods to recover a system from Deadlock:  	
+ <ul>
+
+ <li>Process Termination</li>
+ <li>Resource Preemption</li><br> read more... <a href="https://youtu.be/eskRyKj7aX0"> click here </a>
+</ul>
+
+      </p>
+<div>
+          <section>
+	          <p><a href="tut5.html"><img src="prev.png"></a></p>
+         <p>previous</p>
+	    </section>
+
+         <section>
+	     <p ><a href="tut7.html"><img src="next.png"></a></p>
+          <p>next</p>
+	    </section>
+	</div>
+</body>
+</html>

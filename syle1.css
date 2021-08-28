@@ -1,0 +1,59 @@
+*
+{
+	margin:0px;
+	padding: 0px
+}
+.wrapper
+{
+	width: 100%;
+	height: auto;
+}
+.header
+{
+	width: 100%;
+	height: 200px;
+	
+}
+.uheader
+{
+	height: 50px;
+	width: 100%;
+	background-color: #000;
+
+}
+.lheader
+{
+	width: 100%;
+	width: 150px;
+	background-color: #ee8088;
+}
+.img
+{
+	position: relative;
+	left:100px;
+}
+.menu1
+{
+	width: 100%;
+	height: 30px;
+	background-color: #dd8800;
+}
+.slider
+{
+	width: 100%;
+	height: 200px;
+	background-color: #ee8088;
+}
+.content
+{
+	width: 100%;
+	height: 500px;
+	background-color: #ee7766;
+}
+.footer
+{
+	width: 100%;
+	height: 50px;
+	background-color: #ee6644;
+}
+

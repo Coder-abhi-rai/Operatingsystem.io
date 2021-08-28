@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study Materials</title>
+	<link rel="stylesheet" type="text/css" href="tutcss.css">
+</head>
+<body>
+	<h2>Virtual Memory</h2>
+    <p>
+    	Virtual Memory is a storage allocation scheme in which secondary memory can be addressed as though it were part of main memory. The addresses a program may use to reference memory are distinguished from the addresses the memory system uses to identify physical storage sites, and program generated addresses are translated automatically to the corresponding machine addresses. read more... <a href="https://youtu.be/qlH4-oHnBb8"> click here </a>
+    </p>
+    
+    <h3>Demand paging</h3>
+    <p>
+    	Demand paging is a type of swapping done in virtual memory systems. In demand paging, the data is not copied from the disk to the RAM until they are needed or being demanded by some program. The data will not be copied when the data is already available on the memory. This is otherwise called a lazy evaluation because only the demanded pages of memory is are swapped from the secondary storage (disk space) to the main memory. In contrast during pure swapping all the memory for a process is swapped from secondary storage to main memory during the process startup. <br> read more... <a href="https://youtu.be/Agi0u5Png_U"> click here </a>
+    </p>
+
+    <h3>Page Replacement</h3>
+    <p>
+    	Page replacement algorithm. ... In a computer operating system that uses paging for virtual memory management, page replacement algorithms decide which memory pages to page out, sometimes called swap out, or write to disk, when a page of memory needs to be allocated. <br> read more... <a href="https://youtu.be/Dtdtp3n_0UE"> click here </a>
+    </p>
+
+
+    <h4> Page Replacement Algorithms</h4>
+    <p>
+    	There are various types of Page Replacement algorithms in operating System. <br> These are... <a href="https://youtu.be/Ub4VVDGLJx0"> click here </a>
+    </p>
+
+    <h3>Allocation of Frames</h3>
+    <p>
+    	An important aspect of operating systems, virtual memory is implemented using demand paging. Demand paging necessitates the development of a page-replacement algorithm and a frame allocation algorithm. Frame allocation algorithms are used if you have multiple processes; it helps decide how many frames to allocate to each process.
+
+There are various constraints to the strategies for the allocation of frames:
+
+You cannot allocate more than the total number of available frames.
+At least a minimum number of frames should be allocated to each process. This constraint is supported by two reasons. The first reason is, as less number of frames are allocated, there is an increase in the page fault ratio, decreasing the performance of the execution of the process. Secondly, there should be enough frames to hold all the different pages that any single instruction can reference.
+Frame allocation algorithms –
+The two algorithms commonly used to allocate frames to a process are:
+
+Equal allocation: In a system with x frames and y processes, each process gets equal number of frames, i.e. x/y. For instance, if the system has 48 frames and 9 processes, each process will get 5 frames. The three frames which are not allocated to any process can be used as a free-frame buffer pool.
+Disadvantage: In systems with processes of varying sizes, it does not make much sense to give each process equal frames. Allocation of a large number of frames to a small process will eventually lead to the wastage of a large number of allocated unused frames.
+Proportional allocation: Frames are allocated to each process according to the process size.
+For a process pi of size si, the number of allocated frames is ai = (si/S)*m, where S is the sum of the sizes of all the processes and m is the number of frames in the system. For instance, in a system with 62 frames, if there is a process of 10KB and another process of 127KB, then the first process will be allocated (10/137)*62 = 4 frames and the other process will get (127/137)*62 = 57 frames.
+    </p>
+
+    <h3> Thrashing </h3>
+    <p>
+    	In a virtual storage system (an operating system that manages its logical storage or memory in units called pages), thrashing is a condition in which excessive paging operations are taking place. A system that is thrashing can be perceived as either a very slow system or one that has come to a halt. <br> read more... <a href="https://youtu.be/0Tg88zYHh4Y"> click here </a>
+    </p>
+    <div>
+
+     <section>
+	          <p id="pi"><a href="tut2.html"><img src="prev.png"></a></p>
+          <p>previous</p>
+	    </section>
+
+      <section>
+	     <p><a href="tut4.html"><img src="next.png"></a></p>
+         <p>next</p>
+	    </section>
+	</div>
+    
+</body>
+</html>

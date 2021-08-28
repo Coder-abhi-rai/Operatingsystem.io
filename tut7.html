@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study Materials</title>
+	<link rel="stylesheet" type="text/css" href="tutcss.css">
+
+</head>
+<body>
+	<h2>Device Management</h2>
+	<p>
+		<ul>
+		<li>Track status of each device (such as tape drives, disk drives, printers, plotters, and terminals).</li><br>
+<li>Use preset policies to determine which process will get a device and for how long.</li><br>
+<li>Allocate the devices.</li>
+</ul>
+</p>
+
+<p>
+	<ul><br>
+
+<li><h4>Dedicated Devices:</h4> These are devices that are assigned to one process at a time, and the process only releases the device once it is completed.  This makes sense for devices like plotters, and tape drives.  The problem with this is that it means only one user is using it at a time, and it might be inefficient if the device isn’t being used 100% of the time that it is being locked by the user.</li>
+
+<li><h4>Shared Devices:</h4> These are devices that can be shared between several processes.  Considering an example like a hard disk, it is shared, but interleaving between different processes requests.  All conflicts for device need to be resolved but pre- determined policies to decide which request is handled first</li>
+
+<li><h4>Virtual Device:</h4>These are devices are a combination of Dedicated and Shared Devices. So a printer is a dedicated device, but using the spooling (queues) means it can be shared. A print job isnt sent straight to the printer, instead it goes to the disk (spool) until it is fully prepared with all the necessary printer sequences and formatting, then it goes to the printer, ensuring that the printers (and all I/O devices) are used efficiently.</li>
+   </ul>
+ </p>
+ read more...<a href="https://youtu.be/5tb29jJkJyE"> click here </a>
+
+<div>
+          <section>
+	          <p><a href="tut6.html"><img src="prev.png"></a></p>
+         <p>previous</p>
+	    </section>
+
+         <section>
+	     <p ><a href="tut8.html"><img src="next.png"></a></p>
+          <p>next</p>
+	    </section>
+	</div>
+
+
+
+</body>
+</html>

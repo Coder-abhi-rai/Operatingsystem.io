@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abhijeet Rai</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	 <header>
+
+	 	  <a href="index.html" id="logo"><img src="logo.png"></a>
+          <nav>
+
+          <a href="#" id="menuicon"></a>
+          
+       <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="syllab.html">Syllabus</a></li>
+          <li><a href="tut.html">Tutorials</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="#">Contact</a></li>
+       </ul>
+  
+          </nav>
+     </header> 
+     <br>
+     <br>
+     <br> 
+     <br>
+     <br>
+    
+     
+      
+     <div class="w3-content w3-section" id="photo" style="max-height:800px">
+  <img class="mySlides w3-animate-left" src="slider1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="slider2.png" style="width:100%">
+  <img class="mySlides w3-animate-left" src="slider3333.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="slider4.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
+
+
+
+     <div class="clear"></div>
+
+
+     <div class="vishal">
+     	<section>
+     		<img src="section1.png">
+     		<h1>Online Learning</h1>
+     		<p> 
+     		    Learn everything about Operating System for any theory, semester, or competitive examination 
+     		</p>
+     	</section>
+
+        <section>
+     		<img src="logo.jpg">
+     		<h1>Operating System</h1>
+     		<p> 
+                An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs.
+            </p>
+     	</section>
+
+        <section>
+     		<img src="popular.jpg">
+     		<h1>Popularity</h1>
+     		<p> 
+                Windows 7 is the most popular operating system world wide. Almost 50% use Window 7 as their Operating System.
+            </p>
+     	</section>
+
+     </div>	
+     <div class="golu">
+     <section>
+     	 <a href="info1.html"><img src="windows.jpg"></a>
+     	 <li></li>
+     	 <a href="info4.html"><img src="linux.jpg"></a>
+     	</section>
+     	
+     	 <section>
+
+     	 <a href="info2.html"><img src="steam.jpg"></a>
+     	<li></li>
+     	<a href="info6.html"><img src="android.jpg"></a>
+     	</section>
+     	
+     	 <section>
+     	 <a href="info3.html"><img src="haiku.jpg"></a>
+     	 <li></li>
+     	 <a href="info5.html"><img src="mac.jpg"></a>
+     	</section>
+
+     </div>
+    
+
+   
+
+    <div class="clear"></div>
+
+ <footer>
+	<a name="contact"> <center> <h1> <font size="40px">Contact Us</font></h1></center></a>
+	<section>
+       <img src="logo.png">
+	</section>
+
+<section>
+    <ul>
+      <h2>Contact</h2>
+      <br>	
+      <li> Abhijeet Rai </li>
+      <br>
+      <li> +91-8090277329 </li>
+
+    </ul>
+	</section>
+	<section>
+		
+       <ul class="social">
+       	<h2>Connect with us!!</h2><br>
+        	<li><a href="#">Facebook</a></li>
+       	<li><a href="#">Google</a></li>
+       	<li><a href="#">Twitter</a></li>
+       	<li><a href="#">Instagram</a></li>
+       </ul>
+	</section>	
+</footer>
+<div class="clear"></div>
+<footer class="second">
+	Copyright Abhijeet Rai 2017
+</footer>
+
+    
+</body>
+</html>

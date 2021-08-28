@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study Materials</title>
+	<link rel="stylesheet" type="text/css" href="tutcss.css">
+</head>
+<body>
+	<h2> Disk Management </h2>
+<p>
+	Disk Management is a utility built into different operating systems which can be used to create, delete, format partitions, assign drive letters, and much more. Disk Management can also be used to view partitions and their formatted file systems on the hard drive.
+	<br> read more... <a href="https://youtu.be/ZjMwUhapSEM"></a>
+</p>
+
+<h3>Disk Structure:</h3>
+<p>
+	<img src="disks.png" id="abc"><br>
+	The traditional head-sector-cylinder, HSC numbers are mapped to linear block addresses by numbering the first sector on the first head on the outermost track as sector 0.  Numbering proceeds with the rest of the sectors on that same track, and then the rest of the tracks on the same cylinder before proceeding through the rest of the cylinders to the center of the disk.  In modern practice these linear block addresses are used in place of the HSC numbers for a variety of reasons.
+	<br>
+
+</p>
+
+<h3>Disk Scheduling</h3>
+<p>
+	Disk scheduling is is done by operating systems to schedule I/O requests arriving for disk. Disk scheduling is also known as I/O scheduling. Disk scheduling is important because: Multiple I/O requests may arrive by different processes and only one I/O request can be served at a time by disk controller.<br> In operating systems, seek time is very important. Since all device requests are linked in queues, the seek time is increased causing the system to slow down. Disk Scheduling Algorithms are used to reduce the total seek time of any request.<br>
+    
+	 <h4>Types of Disk Scheduling:</h4>
+
+Although there are other algorithms that reduce the seek time of all requests, I will only concentrate on the following disk scheduling algorithms.
+<ul>
+<li>First Come-First Serve (FCFS). read more... <a href="https://youtu.be/cKyulI4iGow"> click here </a></li>
+<li>Shortest Seek Time First (SSTF). read more... <a href="https://youtu.be/aZHT-O5yHaQ"> click here </a></li>
+<li>Elevator (SCAN).  read more...<a href="https://youtu.be/ybCupf49qd8"> click here </a></li>
+<li>Circular SCAN (C-SCAN). read more...<a href="https://youtu.be/ybCupf49qd8"> click here </a></li>
+<li>LOOK.  read more... <a href="https://youtu.be/ABplee7nfGg"> click here </a></li>
+<li>C-LOOK. read more... <a href="https://youtu.be/ABplee7nfGg"> click here </a></li></ul>
+</p>
+
+<h3> Swap-space Management </h3>
+<p>
+	<ul>
+	<li>Swap-space virtual memory uses disk space as an extension of main memory.</li> <li>Main goal for the design and implementation of swap space is to provide the best throughput for VM system.</li><li>  Swap-space use Swapping use swap space to hold entire process image  Paging store pages that have been pushed out of memory.</li>
+</ul>
+
+<h3> Disk Reliability </h3>
+<p>
+	Storage disks have not infinite life, tough tracking how many read/writes happened, operating temperature and noise produced, it is possible to guess how much time is left to the hard disk, and that is the disk reliability. <br> read more... <a href=""></a>
+</p>
+</p>
+    <div>
+          <section>
+	          <p><a href="tut7.html"><img src="prev.png"></a></p>
+         <p>previous</p>
+	    </section>
+
+         <section>
+	     <p ><a href="tut9.html"><img src="next.png">
+          <p>next</p>
+	    </section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study Materials</title>
+	<link rel="stylesheet" type="text/css" href="tutcss.css">
+</head>
+<body>
+      <h2>Processes</h2>
+      <p>
+      	A process is a program in execution. A process is more than the program code. Lets take an example, when we write a program in C or C++ and compile it, compiler creates a binary code. The original code and Binary code, both are programs. When we actually run the binary code, it becomes a process.<br> read more... <a href="https://youtu.be/7TyzYwrZ_fY"> click here </a>
+      </p>
+
+      <h3>Process Scheduling</h3>
+      <p>
+      	 Which process gets to run next? Process scheduling is determining which process moves from ready state to the running state.
+      </p>
+
+      <h3>Process Scheduler</h3>
+      <p>
+      	When more than one process is runable, the operating system must decide which one is first. The part of the operating system concerned with this decision is called the scheduler, and algorithm it uses is called the scheduling algorithm.<br> read more...<a href="https://youtu.be/0yxJPxUJuLA"> click here </a>
+      </p>
+
+      <h2>CPU Scheduling</h2>
+      <p>
+CPU scheduling is a process of determining which process will own CPU to run while the execution of another process is on hold,that means in waiting state due to unavailability of any resource like I/O etc., thereby maximizing utilization of CPU.<br> read more... <a href="https://youtu.be/-QZYQvUMwKM"> click here </a>
+      </p>
+
+      <h3>Scheduling Algorithms</h3>
+      <p>
+      	"CPU scheduling algorithms deals with the problem of deciding which processes in the ready queue are allocated to the CPU." There are various Scheduling Algorithms in Operating System. These are... 
+      	<ul>
+      		<li>First Come First Serve (FCFS): With this scheme, the process that requests the CPU first is allocated the CPU first. 
+ The implementation of the FCFS policy is easily managed with a FIFO queue. When a process enters the ready queue, its PCB(process control block) is linked onto the tail of the queue.<br> read more... <a href="https://youtu.be/N2gba2d8It4"> click here </a></li><br>
+             <li>Shortest Job First(SJF): Process which have the shortest burst time are scheduled first. 
+ When the CPU is available, it is assigned to the process that has the smallest next CPU burst. 
+ If two processes have the same length next CPU burst, then the order in which they arrived i.e. FCFS scheduling is used to break the tie. <br>read more...<a href="https://youtu.be/PkQciop9kH0"> click here </a></li><br>
+<li> Shortest Remaining Time First(SRTF):
+
+ The choice arises when a new process arrives at the ready queue while a previous process is executing. The new process may have a shorter next CPU burst than what is left of the currently executing process. 
+ A preemptive SJF algorithm will preempt the currently executing process, whereas a non preemptive SJF algorithm will allow the currently running process to finish its CPU burst. Preemptive SJF scheduling is sometimes called shortest-remaining-time-first scheduling. <br> read more... <a href="https://youtu.be/YxbldXw1FLM"> click here </a></li><br>
+
+<li> Priority Scheduling Algorithm:A priority is associated with each process, and the CPU is allocated to the process with the highest priority. Equal-priority processes are scheduled in FCFS order. 
+ An SJF algorithm is simply a priority algorithm where the priority (p)is the inverse of the (predicted) next CPU burst. The larger the CPU burst, the lower the priority, and vice versa. <br> read more... <a href="https://youtu.be/FryPli9DoPU"> click here </a></li><br>
+
+<li> Round Robin Scheduling Algorithm:Each process is assigned a fixed time in cyclic way. 
+ The round-robin (RR)scheduling algorithm is designed especially for timesharing systems. 
+ It is similar to FCFS scheduling, but preemption is added to switch between processes. <br> read more... <a href="https://youtu.be/L-9WDWTh1FM"> click here </a></li>
+
+      	</ul>
+      </p>
+<div>
+       <section>
+	          <p id="pi"><a href="tut3.html"><img src="prev.png"></a></p>
+          <p>previous</p>
+	    </section>
+
+      <section>
+	     <p><a href="tut5.html"><img src="next.png"></a></p>
+         <p>next</p>
+	    </section></div>
+
+</body>
+</html>
